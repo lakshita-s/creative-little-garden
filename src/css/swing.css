@@ -1,0 +1,42 @@
+.scene-swing {
+  background-image: url("/assets/bg-swing.webp"); /* keep whatever swing background you chose */
+}
+
+.scene-swing .swing-layout {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 2rem 6rem;
+  box-sizing: border-box;
+}
+
+/* 2 columns x 2 rows = 3 videos + the note */
+.scene-swing .swing-grid {
+  width: min(92vw, 145vh);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.scene-swing .swing-grid video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.scene-swing .post-it-note {
+  position: static;
+  width: auto;
+  max-width: 28rem;
+  margin: 0;
+  align-self: center;
+  justify-self: center;
+  box-sizing: border-box;
+}
+
+.scene-swing .back {
+  bottom: 17%;
+  left: 86%;
+}

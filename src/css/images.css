@@ -1,0 +1,32 @@
+.scene-images {
+  background-color: #83c1ff;
+}
+
+.scene-images .images-layout {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 2rem;
+  box-sizing: border-box;
+}
+
+.scene-images .images-grid {
+  width: min(66vw, 174vh);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.scene-images .images-grid img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.scene-images .back {
+  bottom: 15%;
+  left: 88%;
+}

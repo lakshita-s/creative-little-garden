@@ -1,0 +1,311 @@
+/* .scene {
+  position: fixed;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+body {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh; */
+  /* font-family: "p22-morris-golden", sans-serif;
+  font-weight: 400;
+  font-style: normal; */
+  /* font-family: "cc-pixel-arcade-cartridge", sans-serif;
+  font-weight: 500;
+  font-style: normal; */
+  /* font-family: "receipt-narrow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.fullscreen-container {
+  position: fixed;
+  width: 100vw;
+  height: 98vh;
+}
+
+.fullscreen-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.fullscreen-container.gate {
+  padding-top: 2%;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+.title {
+  position: fixed;
+  z-index: 10;
+  font-size: 33px;
+  bottom: 58%;
+  left: 51%;
+  transform: translateX(-50%);
+  color: rgb(224, 186, 0);
+  font-style: oblique;
+}
+
+.post-it-note {
+  background-color: rgb(214, 165, 30);
+  width: 25vw;
+  font-size: 16px;
+  justify-content: center;
+  align-items: center;
+  margin: 1%;
+  padding: 1%;
+  text-align: justify;
+  box-shadow: 15px 15px 15px 0px rgba(121, 186, 255, 0.678);
+  height: 50%;
+  margin-top: 10%;
+}
+
+.action-btn {
+  position: fixed;
+  z-index: 10;
+  bottom: 45%;
+  left: 51.4%;
+  transform: translateX(-50%);
+  padding: 0.4rem 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: "quokka", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #2b1800;
+  background: #e0ba00;
+  border: none;
+  border-radius: 0;
+
+  box-shadow:
+    0 -4px 0 0 #2b1800,
+    0 4px 0 0 #2b1800,
+    -4px 0 0 0 #2b1800,
+    4px 0 0 0 #2b1800,
+    inset 4px 4px 0 0 #ffe45c,
+    inset -4px -4px 0 0 #a88800;
+}
+
+.action-btn:hover {
+  background: #f0c800;
+}
+
+.action-btn:active {
+  transform: translateX(-50%) translateY(4px);
+  box-shadow:
+    0 -4px 0 0 #2b1800,
+    0 4px 0 0 #2b1800,
+    -4px 0 0 0 #2b1800,
+    4px 0 0 0 #2b1800,
+    inset 4px 4px 0 0 #a88800,
+    inset -4px -4px 0 0 #e0ba00;
+}
+
+.lock-btn {
+  position: fixed;
+  z-index: 10;
+  left: 51.4%;
+  top: 63%;
+  width: 7vw;
+  height: 8vw;
+  transform: translate(-50%, -50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  outline: 4px dashed rgb(255, 221, 0);
+  outline-offset: 6px;
+  animation: blink 1.2s steps(1) infinite;
+}
+
+.lock-btn:hover,
+.lock-btn:focus-visible {
+  animation: none;
+}
+
+@keyframes blink {
+  50% {
+    outline-color: transparent;
+  }
+} */
+
+
+/* ===== base ===== */
+body {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: "receipt-narrow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  /* other fonts you tried:
+     font-family: "p22-morris-golden", sans-serif;
+     font-family: "cc-pixel-arcade-cartridge", sans-serif; */
+}
+
+[hidden] {
+  display: none !important;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+/* ===== layout ===== */
+.scene {
+  position: fixed;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.fullscreen-container {
+  position: fixed;
+  width: 100vw;
+  height: 98vh;
+}
+
+.fullscreen-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.fullscreen-container.gate {
+  padding-top: 2%;
+}
+
+/* ===== shared looks (add as a className where you want them) ===== */
+
+/* dashed yellow frame */
+.framed {
+  box-sizing: border-box;
+  border: 0.9ch dashed rgb(255, 221, 0);
+  border-radius: 5%;
+}
+
+/* big opening video, centered (margin: auto centers a fixed element) */
+.hero-video {
+  position: fixed;
+  inset: 0;
+  margin: auto;
+  width: 90vw;
+  height: 90vh;
+  object-fit: cover;
+}
+
+.title {
+  position: fixed;
+  z-index: 10;
+  font-size: 33px;
+  bottom: 58%;
+  left: 51%;
+  transform: translateX(-50%);
+  color: rgb(224, 186, 0);
+  font-style: oblique;
+}
+
+.post-it-note {
+  background-color: rgb(214, 165, 30);
+  width: 25vw;
+  height: min-content;
+  font-size: 16px;
+  margin: 1%;
+  margin-top: 10%;
+  padding: 1%;
+  text-align: justify;
+  box-shadow: 15px 15px 15px 0px rgba(121, 186, 255, 0.678);
+}
+
+/* ===== buttons ===== */
+.action-btn {
+  position: fixed;
+  z-index: 10;
+  bottom: 45%;
+  left: 51.4%;
+  transform: translateX(-50%);
+  padding: 0.4rem 1.2rem;
+  font-size: 1.8rem;
+  font-family: "quokka", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-decoration: none;
+  cursor: pointer;
+  color: #2b1800;
+  background: #e0ba00;
+  border: none;
+  border-radius: 0;
+
+  box-shadow:
+    0 -4px 0 0 #2b1800,
+    0 4px 0 0 #2b1800,
+    -4px 0 0 0 #2b1800,
+    4px 0 0 0 #2b1800,
+    inset 4px 4px 0 0 #ffe45c,
+    inset -4px -4px 0 0 #a88800;
+}
+
+.action-btn:hover {
+  background: #f0c800;
+}
+
+.action-btn:active {
+  transform: translateX(-50%) translateY(4px);
+  box-shadow:
+    0 -4px 0 0 #2b1800,
+    0 4px 0 0 #2b1800,
+    -4px 0 0 0 #2b1800,
+    4px 0 0 0 #2b1800,
+    inset 4px 4px 0 0 #a88800,
+    inset -4px -4px 0 0 #e0ba00;
+}
+
+.lock-btn {
+  position: fixed;
+  z-index: 10;
+  left: 51.4%;
+  top: 63%;
+  width: 7vw;
+  height: 8vw;
+  transform: translate(-50%, -50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: 4px dashed rgb(255, 221, 0);
+  outline-offset: 6px;
+  animation: blink 1.2s steps(1) infinite;
+}
+
+.lock-btn:hover,
+.lock-btn:focus-visible {
+  animation: none;
+}
+
+@keyframes blink {
+  50% {
+    outline-color: transparent;
+  }
+}

@@ -1,0 +1,30 @@
+.scene-meal {
+  background-image: url("/assets/fixed-bench.jpg");
+}
+
+.scene-meal .video-ella {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* stops the video stretching to full height */
+  gap: 4rem;
+  padding: 2rem;
+  box-sizing: border-box;
+  margin-top: 3%;
+}
+
+.scene-meal .video-ella video {
+  width: 60vw;
+  cursor: pointer;
+}
+
+.scene-meal .back {
+  bottom: 21%;
+  left: 79%;
+}
+
+.post-it-note {
+  margin-left: 8%;
+  margin-top: 4%;
+}

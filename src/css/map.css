@@ -1,0 +1,91 @@
+.map-view {
+  /* position: fixed; */
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.map-view img {
+  height: 98vh;
+  width: auto;
+  max-width: 100vw;
+  object-fit: contain;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: pixelated;
+  border-width: 0.9ch;
+  border-style: dashed;
+  border-color: rgb(255, 221, 0);
+}
+
+.map-btn {
+  position: fixed;
+  z-index: 10;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background: #ffffffa9;
+  color: #000;
+  border: 1px solid #000;
+  text-decoration: none;
+  padding: 0.1rem 0.4rem;
+}
+
+.map-btn.bench {
+  bottom: 65%;
+  left: 48%;
+}
+
+.map-btn.lunch {
+  bottom: 75%;
+  left: 43%;
+}
+
+.map-btn.swing {
+  bottom: 75%;
+  left: 34.5%;
+}
+
+.map-btn.meal {
+  bottom: 50%;
+  left: 50%;
+}
+
+.map-btn.tree {
+  bottom: 89%;
+  left: 44.5%;
+}
+
+.map-btn.plant {
+  bottom: 53%;
+  left: 38%;
+}
+
+.map-btn.images {
+  bottom: 23%;
+  left: 47%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  align-items: center; /* vertically centered */
+  justify-items: center; /* each note centered in its own column */
+  height: 100%; /* needed so the vertical centering has room */
+}
+
+.container .post-it-note {
+  width: min(22rem, 90%); /* never wider than its column */
+  height: min-content;
+  box-sizing: border-box;
+  padding: 4%;
+  margin-left: 0%;
+}
+
+.map-btn.done {
+  background: rgba(214, 165, 30, 0.796);
+}
+
+.action-btn.back {
+  left: 5%;
+  bottom: 90%;
+}

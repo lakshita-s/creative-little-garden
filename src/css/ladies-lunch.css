@@ -1,0 +1,37 @@
+.scene-lunch {
+  background-image: url("/assets/bg-lunch.webp");
+}
+
+/* your original gif sizing */
+.lunch-container {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  left: 10%;
+  top: 12%;
+}
+
+.lunch-container img {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  object-position: center;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: pixelated;
+}
+
+/* the note floats over the gif */
+.scene-lunch .post-it-note {
+  position: fixed;
+  z-index: 5;
+  top: 10%;
+  left: 4%;
+  max-width: 22rem;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.scene-lunch .back {
+  bottom: 24%;
+  left: 76%;
+}

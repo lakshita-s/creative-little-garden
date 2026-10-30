@@ -1,0 +1,36 @@
+.scene-tree {
+  background-image: url("/assets/back.jpg"); /* change to your tree background */
+}
+
+/* smaller centered picture */
+.scene-tree .tree-pic {
+  position: fixed;
+  inset: 0;
+  margin: auto;
+  height: 65vh;
+  width: auto;
+  max-width: 50vw;
+  object-fit: cover;
+}
+
+/* note on the left, beside the picture */
+.scene-tree .post-it-note {
+  position: fixed;
+  z-index: 5;
+  bottom: 23%;
+  left: 70%;
+  width: min(22rem, 25vw);
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* floats over the bottom of the video */
+.scene-tree .back {
+  bottom: 15%;
+  left: 85%;
+}
+
+.action-btn.tree {
+    left: 30%;
+    bottom: 73%;
+}

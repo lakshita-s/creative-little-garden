@@ -1,0 +1,48 @@
+.scene-bench {
+  background-image: url("/assets/bg-bench.webp");
+}
+
+.scene-bench .post-it-note {
+  position: fixed;
+  z-index: 5;
+  top: 14%;
+  left: 3%;
+  width: 20rem;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.scene-bench .video-row {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem 2rem 2rem 24rem; /* extra left padding leaves room for the note */
+  box-sizing: border-box;
+}
+
+.scene-bench .video-row video {
+  width: 33vw;
+  cursor: pointer;
+}
+
+.scene-bench .hammer {
+  margin-top: 6%;
+  align-self: flex-start;
+}
+
+.scene-bench .drill {
+  margin-bottom: 6%;
+  align-self: flex-end;
+}
+
+.scene-bench .back {
+  left: 65%;
+  bottom: 50%;
+}
+
+.post-it-note.two {
+  left: 13%;
+  top: 60%;
+}
