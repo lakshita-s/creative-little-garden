@@ -29,7 +29,7 @@ function Bench({ markDone }) {
             You ask a volunteer, interrupting his moment of fixing something,
             about his connection with the garden. He gives you his story, and
             the story of the garden too; the history of it all. Later on, he,
-            Norman, comes up to you and says, "which one of you is stronger?"
+            Norman, comes up to you and your friend and says, "which one of you is stronger?"
             You both shrug and go over to help him. The next hour is spent
             fixing two broken benches; you have accidentally become a volunteer.
           </div>

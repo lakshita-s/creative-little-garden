@@ -33,7 +33,7 @@ function LadiesLunch({ markDone }) {
       {started && (
         <div className="lunch-container">
           <img src="/assets/ladies-lunch.gif" alt="a lunch" />
-          <div className="post-it-note">A sweet group of older women join the small tables together to enjoy a group lunch. They tell you they got this idea from Facebook, where someone suggested picking up food from nearby restaurants and eating it at the garden. It seems like this will become a regular occurance for them. You take a picture for them, and memorize their energy, to draw later, too shy to ask them to take a photo.</div>
+          <div className="post-it-note">A sweet group of older women join the small tables together to enjoy a group lunch. They tell you they got this idea from Facebook, where someone suggested picking up food from nearby restaurants and eating it at the garden. It seems like this will become a regular occurance for them. You take a picture for them, and memorize their energy to draw later, too shy to ask them to take one with your own camera.</div>
 
           <Link
             className="action-btn back"

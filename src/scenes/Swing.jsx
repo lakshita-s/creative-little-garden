@@ -53,9 +53,9 @@ function Swing({ markDone }) {
 
           <div className="post-it-note">
             You see a woman sitting on the swing, and she tells you that she
-            loves this garden and especially the swing. She comes by whenever
+            loves this garden, and especially the swing. She comes by whenever
             she can, because she lives in the neighborhood and doesn't have a
-            backyard.
+            backyard, but gets the feeling of it here.
           </div>
         </div>
 
