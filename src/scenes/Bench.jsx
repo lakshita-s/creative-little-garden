@@ -1,12 +1,16 @@
+//intro=broken bench picture + note + button
+//videos-second note + two videos, click to play
+//end-fixed bench picture (clapping plays) + back link
 import "../css/bench.css";
 import { useState, useRef } from "react";
 import { Link } from "react-router";
 
 function Bench({ markDone }) {
-  const [step, setStep] = useState("intro"); // intro -> videos -> end
-  const [finished, setFinished] = useState(0);
+  const [step, setStep] = useState("intro");
+  const [finished, setFinished] = useState(0); //how many videos have finished playing
   const audioRef = useRef(null);
 
+    //runs each time a video ends. when both have, moves to the last stage + triggers audio
   function videoEnded() {
     const count = finished + 1;
     setFinished(count);
@@ -23,15 +27,16 @@ function Bench({ markDone }) {
       {step === "intro" && (
         <>
           <div className="fullscreen-container">
-            <img src="/assets/bench.png" alt="broken bench" />
+            <img src="/assets/images/broken-bench.png" alt="broken bench" />
           </div>
           <div className="post-it-note">
             You ask a volunteer, interrupting his moment of fixing something,
             about his connection with the garden. He gives you his story, and
             the story of the garden too; the history of it all. Later on, he,
-            Norman, comes up to you and your friend and says, "which one of you is stronger?"
-            You both shrug and go over to help him. The next hour is spent
-            fixing two broken benches; you have accidentally become a volunteer.
+            Norman, comes up to you and your friend and says, "which one of you
+            is stronger?" You both shrug and go over to help him. The next hour
+            is spent fixing two broken benches; you have accidentally become a
+            volunteer.
           </div>
           <button className="action-btn" onClick={() => setStep("videos")}>
             FIX BROKEN BENCH ?
@@ -39,7 +44,9 @@ function Bench({ markDone }) {
         </>
       )}
 
+      {/* step 2: two videos. e.currentTarget = the video that was clicked */}
       {step === "videos" && (
+        
         <>
           <div className="post-it-note two">
             The person you were talking to before, Anthony, who was at the
@@ -51,17 +58,17 @@ function Bench({ markDone }) {
           <div className="video-row">
             <video
               className="hammer framed"
-              src="/assets/hammer-bench.mp4"
+              src="/assets/videos/hammer-bench.mp4"
               playsInline
               onClick={(e) => e.currentTarget.play()}
               onEnded={videoEnded}
             />
             <video
               className="drill framed"
-              src="/assets/drill-bench.mp4"
+              src="/assets/videos/drill-bench.mp4"
               playsInline
               onClick={(e) => {
-                e.currentTarget.playbackRate = 0.5;
+                e.currentTarget.playbackRate = 0.5; //slow motion
                 e.currentTarget.play();
               }}
               onEnded={videoEnded}
@@ -73,20 +80,20 @@ function Bench({ markDone }) {
       {step === "end" && (
         <>
           <div className="fullscreen-container">
-            <img src="/assets/fixed-bench.jpg" alt="fixed bench" />
+            <img src="/assets/images/fixed-bench.jpg" alt="fixed bench" />
           </div>
 
-        <Link
-          className="action-btn back"
-          to="/map"
-          onClick={() => markDone("bench")}
-        >
-          &#9166;
-        </Link>
+          <Link
+            className="action-btn back"
+            to="/map"
+            onClick={() => markDone("bench")}
+          >
+            &#9166;
+          </Link>
         </>
       )}
 
-      <audio ref={audioRef} src="/assets/clapping.mp4" />
+      <audio ref={audioRef} src="/assets/other/clapping.mp4" />
     </div>
   );
 }

@@ -1,5 +1,5 @@
 .scene-meal {
-  background-image: url("/assets/fixed-bench.jpg");
+  background-image: url("/assets/images/fixed-bench.jpg");
 }
 
 .scene-meal .video-ella {
@@ -7,7 +7,7 @@
   inset: 0;
   display: flex;
   justify-content: center;
-  align-items: center; /* stops the video stretching to full height */
+  align-items: center;
   gap: 4rem;
   padding: 2rem;
   box-sizing: border-box;

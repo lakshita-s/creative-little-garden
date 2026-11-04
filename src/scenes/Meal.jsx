@@ -3,11 +3,11 @@ import { useState, useRef } from "react";
 import { Link } from "react-router";
 
 function Meal({ markDone }) {
-  const [started, setStarted] = useState(false);
+  const [started, setStarted] = useState(false); 
   const videoRef = useRef(null);
 
   function talkToElla() {
-    setStarted(true); // hides the button
+    setStarted(true);
     videoRef.current.play();
   }
 
@@ -30,7 +30,7 @@ function Meal({ markDone }) {
         <video
           className="framed"
           ref={videoRef}
-          src="/assets/mealwella-small.mp4"
+          src="/assets/videos/mealwella-small.mp4"
           playsInline
         />
 

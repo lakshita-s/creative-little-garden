@@ -1,8 +1,8 @@
-.scene-images {
+.scene-gallery {
   background-color: #83c1ff;
 }
 
-.scene-images .images-layout {
+.scene-gallery .gallery-layout {
   position: fixed;
   inset: 0;
   display: flex;
@@ -12,21 +12,21 @@
   box-sizing: border-box;
 }
 
-.scene-images .images-grid {
+.scene-gallery .gallery-grid {
   width: min(66vw, 174vh);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
 }
 
-.scene-images .images-grid img {
+.scene-gallery .gallery-grid img {
   display: block;
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
 }
 
-.scene-images .back {
+.scene-gallery .back {
   bottom: 15%;
   left: 88%;
 }

@@ -1,5 +1,5 @@
 .scene-bench {
-  background-image: url("/assets/bg-bench.webp");
+  background-image: url("/assets/backgrounds/bg-bench.webp");
 }
 
 .scene-bench .post-it-note {
@@ -18,7 +18,7 @@
   display: flex;
   justify-content: center;
   gap: 2rem;
-  padding: 2rem 2rem 2rem 24rem; /* extra left padding leaves room for the note */
+  padding: 2rem 2rem 2rem 24rem;
   box-sizing: border-box;
 }
 

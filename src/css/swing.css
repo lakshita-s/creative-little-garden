@@ -1,5 +1,5 @@
 .scene-swing {
-  background-image: url("/assets/bg-swing.webp"); /* keep whatever swing background you chose */
+  background-image: url("/assets/backgrounds/bg-swing.webp");
 }
 
 .scene-swing .swing-layout {
@@ -12,7 +12,6 @@
   box-sizing: border-box;
 }
 
-/* 2 columns x 2 rows = 3 videos + the note */
 .scene-swing .swing-grid {
   width: min(92vw, 145vh);
   display: grid;

@@ -1,8 +1,7 @@
 .scene-tree {
-  background-image: url("/assets/back.jpg"); /* change to your tree background */
+  background-image: url("/assets/backgrounds/bg-tree.webp");
 }
 
-/* smaller centered picture */
 .scene-tree .tree-pic {
   position: fixed;
   inset: 0;
@@ -13,7 +12,6 @@
   object-fit: cover;
 }
 
-/* note on the left, beside the picture */
 .scene-tree .post-it-note {
   position: fixed;
   z-index: 5;
@@ -24,7 +22,6 @@
   box-sizing: border-box;
 }
 
-/* floats over the bottom of the video */
 .scene-tree .back {
   bottom: 15%;
   left: 85%;

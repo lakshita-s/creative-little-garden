@@ -3,9 +3,9 @@ import { useState, useRef } from "react";
 import { Link } from "react-router";
 
 const gridVideos = [
-  "/assets/swing2.mp4",
-  "/assets/swing3.mp4",
-  "/assets/swing1.mp4",
+  "/assets/videos/swing2.mp4",
+  "/assets/videos/swing3.mp4",
+  "/assets/videos/swing1.mp4",
 ];
 
 function Swing({ markDone }) {
@@ -13,18 +13,17 @@ function Swing({ markDone }) {
   const gridRefs = useRef([]);
 
   function sitOnSwing() {
-    setStarted(true); // hides the big video + button, shows the grid
+    setStarted(true);
     gridRefs.current.forEach((video) => video && video.play());
   }
 
   return (
     <div className="scene scene-swing">
-      {/* 1. opening: one big video + button */}
       {!started && (
         <>
           <video
             className="hero-video framed"
-            src="/assets/swing.mp4"
+            src="/assets/videos/swing.mp4"
             autoPlay
             loop
             muted
@@ -36,7 +35,6 @@ function Swing({ markDone }) {
         </>
       )}
 
-      {/* 2. after the click: 2x2 grid = 3 videos + the note */}
       <div className="swing-layout" hidden={!started}>
         <div className="swing-grid">
           {gridVideos.map((src, i) => (

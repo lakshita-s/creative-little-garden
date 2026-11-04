@@ -2,16 +2,18 @@ import { useState } from "react";
 import { Link } from "react-router";
 
 function Gate() {
+
+    // false = closed gate with the lock button, true = open gate with ENTER
   const [open, setOpen] = useState(false);
 
   return (
     <div
       className="scene"
-      style={{ backgroundImage: "url(/assets/bg-gate.webp)" }}
+      style={{ backgroundImage: "url(/assets/backgrounds/bg-gate.webp)" }}
     >
       <div className="fullscreen-container gate">
         <img
-          src={open ? "/assets/open-gate.png" : "/assets/closed-gate.png"}
+          src={open ? "/assets/images/open-gate.png" : "/assets/images/closed-gate.png"}
           alt="gate"
         />
         {open && <p className="title">CREATIVE LITTLE GARDEN</p>}
@@ -24,7 +26,7 @@ function Gate() {
       ) : (
         <button
           className="lock-btn"
-          aria-label="Unlock the gate"
+          aria-label="unlock the gate"
           onClick={() => setOpen(true)}
         />
       )}

@@ -3,16 +3,10 @@ import { Link } from "react-router";
 
 function Map({ go, done }) {
   return (
-    <div
-      className="scene"
-      style={{ backgroundImage: "url(/assets/bg-gate.webp)" }}
-    >
-              <Link
-          className="action-btn back"
-          to="/"
-        >
-          &#9166;
-        </Link>
+    <div className="scene-map">
+      <Link className="action-btn back" to="/">
+        &#9166;
+      </Link>
       <div className="container">
         <div className="post-it-note">
           The Creative Little Garden was founded in 1978, after the building
@@ -23,7 +17,7 @@ function Map({ go, done }) {
           the French Resistance.
         </div>
         <div className="map-view">
-          <img src="/assets/map.png" alt="map" />
+          <img src="/assets/images/map.png" alt="map" />
           <Link
             className={
               "map-btn bench" + (done.includes("bench") ? " done" : "")
@@ -55,29 +49,19 @@ function Map({ go, done }) {
             swing
           </Link>
           <Link
-            className={
-              "map-btn tree" + (done.includes("tree") ? " done" : "")
-            }
+            className={"map-btn tree" + (done.includes("tree") ? " done" : "")}
             to="/willow-tree"
           >
             willow tree
           </Link>
           <Link
             className={
-              "map-btn images" + (done.includes("images") ? " done" : "")
+              "map-btn gallery" + (done.includes("gallery") ? " done" : "")
             }
-            to="/images"
+            to="/gallery"
           >
             random image collection
           </Link>
-          {/* <button
-            className={
-              "map-btn plant" + (done.includes("plant") ? " done" : "")
-            }
-            onClick={() => go("plant")}
-          >
-            plant a seed
-          </button> */}
         </div>
         <div className="post-it-note two">
           It is located at 530 East 6th St, NY 10009, and is referred to as “an

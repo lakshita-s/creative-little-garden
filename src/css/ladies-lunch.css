@@ -1,8 +1,7 @@
 .scene-lunch {
-  background-image: url("/assets/bg-lunch.webp");
+  background-image: url("/assets/backgrounds/bg-lunch.webp");
 }
 
-/* your original gif sizing */
 .lunch-container {
   position: fixed;
   width: 100vw;
@@ -20,7 +19,6 @@
   image-rendering: pixelated;
 }
 
-/* the note floats over the gif */
 .scene-lunch .post-it-note {
   position: fixed;
   z-index: 5;

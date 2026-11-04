@@ -1,5 +1,7 @@
+.scene-map {
+  background-image: url("/assets/backgrounds/bg-gate.webp");
+}
 .map-view {
-  /* position: fixed; */
   inset: 0;
   display: flex;
   justify-content: center;
@@ -55,12 +57,7 @@
   left: 44.5%;
 }
 
-.map-btn.plant {
-  bottom: 53%;
-  left: 38%;
-}
-
-.map-btn.images {
+.map-btn.gallery {
   bottom: 23%;
   left: 47%;
 }
@@ -68,13 +65,13 @@
 .container {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
-  align-items: center; /* vertically centered */
-  justify-items: center; /* each note centered in its own column */
-  height: 100%; /* needed so the vertical centering has room */
+  align-items: center;
+  justify-items: center; 
+  height: 100%; 
 }
 
 .container .post-it-note {
-  width: min(22rem, 90%); /* never wider than its column */
+  width: min(22rem, 90%); 
   height: min-content;
   box-sizing: border-box;
   padding: 4%;
